@@ -1,0 +1,44 @@
+{
+  "source": "google_videos",
+  "name": "Google Videos",
+  "sample": {
+    "query": "database indexing tutorial",
+    "num": 5
+  },
+  "inputs": "query; optional Google search parameters",
+  "outputs": "results[].videos: video titles, links and available metadata; usage.credits",
+  "limits": "Search discovers videos; it does not return video files or transcripts.",
+  "outputExample": {
+    "source": "google_videos",
+    "status": "done",
+    "results": [
+      {
+        "searchParameters": {
+          "q": "me at the zoo",
+          "gl": "us",
+          "hl": "en",
+          "type": "videos",
+          "num": 10,
+          "page": 1,
+          "engine": "google"
+        },
+        "videos": [
+          {
+            "title": "Me at the zoo",
+            "link": "https://www.youtube.com/watch?v=jNQXAC9IVRw&vl=en",
+            "snippet": "Microplastics are accumulating in human brains at an alarming rate https://www.youtube.com/watch?v=0PT5c1z3LL8 “Nanoplastics and Human ...",
+            "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNoybJBMfqr7vwH-saySvflZreMzBKZDBjW_zQMrY81E-xQZBBMzVuRw&s",
+            "videoUrl": "https://encrypted-vtbn0.gstatic.com/video?q=tbn:ANd9GcS8uZHJMduuLjzsxqOtyhx8VWeRlui2Fo0sUg",
+            "duration": "0:19",
+            "source": "YouTube"
+          }
+        ]
+      }
+    ],
+    "usage": {
+      "credits": 0.02
+    }
+  },
+  "repository": "flashdata-google-videos-action",
+  "action_name": "Google Video Search - FlashData"
+}
