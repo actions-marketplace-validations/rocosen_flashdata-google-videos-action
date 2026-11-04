@@ -1,5 +1,6 @@
-name: Google Video Search - FlashData
-description: Create a video tutorial shortlist across websites for a research workflow.
+name: Google Video Search
+description: Search Google Videos and export video titles, links, snippets and
+  available durations as JSON and JSONL.
 author: FlashData
 branding:
   icon: search
